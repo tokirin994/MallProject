@@ -1,0 +1,250 @@
+10:59:07:748  INFO 22136 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 23 on LAPTOP-CPIBO4RO with PID 22136 (C:\Users\12046\Desktop\routine\hmall\cart-service\target\classes started by 12046 in C:\Users\12046\Desktop\routine\hmall)
+10:59:07:750 DEBUG 22136 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+10:59:07:751  INFO 22136 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+10:59:08:629  INFO 22136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+10:59:08:632  INFO 22136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+10:59:08:659  INFO 22136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+10:59:09:415  INFO 22136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+10:59:09:426  INFO 22136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+10:59:09:427  INFO 22136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+10:59:09:572  INFO 22136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+10:59:09:572  INFO 22136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1755 ms
+10:59:10:491  INFO 22136 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+10:59:10:905  WARN 22136 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+10:59:10:925  INFO 22136 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+10:59:10:936  INFO 22136 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+10:59:10:960 ERROR 22136 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+11:03:25:048  INFO 27616 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 23 on LAPTOP-CPIBO4RO with PID 27616 (C:\Users\12046\Desktop\routine\hmall\cart-service\target\classes started by 12046 in C:\Users\12046\Desktop\routine\hmall)
+11:03:25:050 DEBUG 27616 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+11:03:25:051  INFO 27616 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+11:03:26:012  INFO 27616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:03:26:016  INFO 27616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:03:26:042  INFO 27616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+11:03:26:834  INFO 27616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+11:03:26:846  INFO 27616 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:03:26:847  INFO 27616 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+11:03:26:987  INFO 27616 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+11:03:26:988  INFO 27616 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1867 ms
+11:03:27:929  INFO 27616 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:03:28:347  INFO 27616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+11:03:28:349  INFO 27616 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+11:03:28:352  INFO 27616 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+11:03:28:389  INFO 27616 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+11:03:28:526  INFO 27616 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 3.974 seconds (JVM running for 4.459)
+11:04:58:752  INFO 27804 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 23 on LAPTOP-CPIBO4RO with PID 27804 (C:\Users\12046\Desktop\routine\hmall\cart-service\target\classes started by 12046 in C:\Users\12046\Desktop\routine\hmall)
+11:04:58:754 DEBUG 27804 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+11:04:58:755  INFO 27804 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+11:04:59:644  INFO 27804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:04:59:648  INFO 27804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:04:59:672  INFO 27804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+11:05:00:460  INFO 27804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+11:05:00:479  INFO 27804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:05:00:480  INFO 27804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+11:05:00:643  INFO 27804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+11:05:00:644  INFO 27804 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1808 ms
+11:05:01:661  INFO 27804 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:05:02:093  WARN 27804 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+11:05:02:117  INFO 27804 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+11:05:02:133  INFO 27804 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:05:02:158 ERROR 27804 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+11:12:31:443  INFO 29076 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 23 on LAPTOP-CPIBO4RO with PID 29076 (C:\Users\12046\Desktop\routine\hmall\cart-service\target\classes started by 12046 in C:\Users\12046\Desktop\routine\hmall)
+11:12:31:447 DEBUG 29076 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+11:12:31:447  INFO 29076 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+11:12:32:356  INFO 29076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:12:32:359  INFO 29076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:12:32:386  INFO 29076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+11:12:33:222  INFO 29076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+11:12:33:236  INFO 29076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:12:33:237  INFO 29076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+11:12:33:386  INFO 29076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+11:12:33:386  INFO 29076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1868 ms
+11:12:34:570  INFO 29076 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:12:35:101  INFO 29076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+11:12:35:102  INFO 29076 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+11:12:35:107  INFO 29076 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+11:12:35:153  INFO 29076 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+11:12:35:280  INFO 29076 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 4.316 seconds (JVM running for 4.805)
+11:14:27:144  INFO 17256 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 23 on LAPTOP-CPIBO4RO with PID 17256 (C:\Users\12046\Desktop\routine\hmall\cart-service\target\classes started by 12046 in C:\Users\12046\Desktop\routine\hmall)
+11:14:27:147 DEBUG 17256 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+11:14:27:148  INFO 17256 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+11:14:28:036  INFO 17256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:14:28:040  INFO 17256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:14:28:065  INFO 17256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+11:14:28:815  INFO 17256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+11:14:28:826  INFO 17256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:14:28:826  INFO 17256 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+11:14:28:969  INFO 17256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+11:14:28:970  INFO 17256 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1750 ms
+11:14:29:979  INFO 17256 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:14:30:385  WARN 17256 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+11:14:30:406  INFO 17256 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+11:14:30:418  INFO 17256 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:14:30:439 ERROR 17256 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+11:18:58:341  INFO 29024 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 23 on LAPTOP-CPIBO4RO with PID 29024 (C:\Users\12046\Desktop\routine\hmall\cart-service\target\classes started by 12046 in C:\Users\12046\Desktop\routine\hmall)
+11:18:58:346 DEBUG 29024 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+11:18:58:347  INFO 29024 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+11:18:59:285  INFO 29024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:18:59:290  INFO 29024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:18:59:319  INFO 29024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+11:19:00:192  INFO 29024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+11:19:00:205  INFO 29024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:19:00:206  INFO 29024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+11:19:00:357  INFO 29024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+11:19:00:358  INFO 29024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1943 ms
+11:19:01:297  INFO 29024 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:19:01:743  INFO 29024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+11:19:01:744  INFO 29024 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+11:19:01:746  INFO 29024 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+11:19:01:779  INFO 29024 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+11:19:01:903  INFO 29024 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 4.088 seconds (JVM running for 4.578)
+15:55:27:714  INFO 25064 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 23 on LAPTOP-CPIBO4RO with PID 25064 (C:\Users\12046\Desktop\routine\hmall\cart-service\target\classes started by 12046 in C:\Users\12046\Desktop\routine\hmall)
+15:55:27:718 DEBUG 25064 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:55:27:719  INFO 25064 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+15:55:28:727  INFO 25064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+15:55:28:731  INFO 25064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:55:28:762  INFO 25064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+15:55:29:696  INFO 25064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+15:55:29:712  INFO 25064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:55:29:713  INFO 25064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:55:29:930  INFO 25064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:55:29:933  INFO 25064 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2143 ms
+15:55:30:047  WARN 25064 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartController': Unsatisfied dependency expressed through field 'cartService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cartServiceImpl': Resolution of declared constructors on bean Class [com.hmall.cart.service.impl.CartServiceImpl] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@42a57993] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/cloud/client/discovery/DiscoveryClient
+15:55:30:051  INFO 25064 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+15:55:30:077  INFO 25064 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:55:30:107 ERROR 25064 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartController': Unsatisfied dependency expressed through field 'cartService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cartServiceImpl': Resolution of declared constructors on bean Class [com.hmall.cart.service.impl.CartServiceImpl] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@42a57993] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/cloud/client/discovery/DiscoveryClient
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.cart.CartApplication.main(CartApplication.java:11) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cartServiceImpl': Resolution of declared constructors on bean Class [com.hmall.cart.service.impl.CartServiceImpl] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@42a57993] failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/cloud/client/discovery/DiscoveryClient
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:309) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/cloud/client/discovery/DiscoveryClient
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3621) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2786) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:304) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 32 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.client.discovery.DiscoveryClient
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528) ~[na:na]
+	... 36 common frames omitted
+
+15:59:03:895  INFO 31880 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 23 on LAPTOP-CPIBO4RO with PID 31880 (C:\Users\12046\Desktop\routine\hmall\cart-service\target\classes started by 12046 in C:\Users\12046\Desktop\routine\hmall)
+15:59:03:898 DEBUG 31880 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:59:03:899  INFO 31880 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+15:59:04:893  INFO 31880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+15:59:04:897  INFO 31880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:59:04:924  INFO 31880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+15:59:05:167  INFO 31880 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4d687fb9-ff3f-307d-b4db-e9a76536564f
+15:59:05:662  INFO 31880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+15:59:05:672  INFO 31880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:59:05:672  INFO 31880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:59:05:809  INFO 31880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:59:05:810  INFO 31880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1847 ms
+15:59:06:848  INFO 31880 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:59:07:400  INFO 31880 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of e123e2d7-c864-4cb9-9139-88f56a418ce4
+15:59:07:484  INFO 31880 --- [main] org.reflections.Reflections              : Reflections took 36 ms to scan 1 urls, producing 3 keys and 6 values 
+15:59:07:516  INFO 31880 --- [main] org.reflections.Reflections              : Reflections took 10 ms to scan 1 urls, producing 4 keys and 9 values 
+15:59:07:540  INFO 31880 --- [main] org.reflections.Reflections              : Reflections took 18 ms to scan 1 urls, producing 3 keys and 10 values 
+15:59:07:543  WARN 31880 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:59:07:548  INFO 31880 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+15:59:07:557  INFO 31880 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+15:59:07:569  INFO 31880 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+15:59:07:574  WARN 31880 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:59:07:576  INFO 31880 --- [main] com.alibaba.nacos.common.remote.client   : [e123e2d7-c864-4cb9-9139-88f56a418ce4] RpcClient init label, labels = {module=naming, source=sdk}
+15:59:07:581  INFO 31880 --- [main] com.alibaba.nacos.common.remote.client   : [e123e2d7-c864-4cb9-9139-88f56a418ce4] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+15:59:07:582  INFO 31880 --- [main] com.alibaba.nacos.common.remote.client   : [e123e2d7-c864-4cb9-9139-88f56a418ce4] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+15:59:07:583  INFO 31880 --- [main] com.alibaba.nacos.common.remote.client   : [e123e2d7-c864-4cb9-9139-88f56a418ce4] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+15:59:07:586  INFO 31880 --- [main] com.alibaba.nacos.common.remote.client   : [e123e2d7-c864-4cb9-9139-88f56a418ce4] Try to connect to server on start up, server: {serverIp = '192.168.163.130', server main port = 8848}
+15:59:08:316  INFO 31880 --- [main] com.alibaba.nacos.common.remote.client   : [e123e2d7-c864-4cb9-9139-88f56a418ce4] Success to connect to server [192.168.163.130:8848] on start up, connectionId = 1734595148312_192.168.163.133_55718
+15:59:08:317  INFO 31880 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [e123e2d7-c864-4cb9-9139-88f56a418ce4] Notify connected event to listeners.
+15:59:08:317  INFO 31880 --- [main] com.alibaba.nacos.common.remote.client   : [e123e2d7-c864-4cb9-9139-88f56a418ce4] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+15:59:08:318  INFO 31880 --- [main] com.alibaba.nacos.common.remote.client   : [e123e2d7-c864-4cb9-9139-88f56a418ce4] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000001ea10820000
+15:59:08:374  INFO 31880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+15:59:08:394  INFO 31880 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 10.244.21.17:8083 register finished
+15:59:08:395  INFO 31880 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:59:08:400  INFO 31880 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:59:08:433  INFO 31880 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:59:08:538  INFO 31880 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 5.242 seconds (JVM running for 5.804)
+15:59:08:919  INFO 31880 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [e123e2d7-c864-4cb9-9139-88f56a418ce4] Receive server push request, request = NotifySubscriberRequest, requestId = 16
+15:59:08:923  INFO 31880 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [e123e2d7-c864-4cb9-9139-88f56a418ce4] Ack server push request, request = NotifySubscriberRequest, requestId = 16

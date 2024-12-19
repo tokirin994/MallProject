@@ -1,0 +1,19 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "192.168.163.130",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mysql",
+            "database": "hm-item",
+            "username": "root"
+        }
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic"
+}
