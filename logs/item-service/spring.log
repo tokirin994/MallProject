@@ -961,3 +961,51 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 
 15:58:13:174  WARN 34236 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
 15:58:13:175  WARN 34236 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:45:23:347  INFO 34508 --- [main] com.hmall.item.ItemApplication           : Starting ItemApplication using Java 23 on LAPTOP-CPIBO4RO with PID 34508 (C:\Users\12046\Desktop\routine\MallProject\item-service\target\classes started by 12046 in C:\Users\12046\Desktop\routine\MallProject)
+16:45:23:351 DEBUG 34508 --- [main] com.hmall.item.ItemApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+16:45:23:353  INFO 34508 --- [main] com.hmall.item.ItemApplication           : The following 1 profile is active: "local"
+16:45:24:699  INFO 34508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+16:45:24:703  INFO 34508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:45:24:731  INFO 34508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+16:45:24:962  INFO 34508 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1155ac60-3d12-35de-8374-8ffb18d5d455
+16:45:25:457  INFO 34508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+16:45:25:469  INFO 34508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:45:25:469  INFO 34508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:45:25:601  INFO 34508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:45:25:602  INFO 34508 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2164 ms
+16:45:26:762  INFO 34508 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+16:45:27:321  INFO 34508 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 2bdef3ae-fb76-4415-a824-bbe4337e9532
+16:45:27:417  INFO 34508 --- [main] org.reflections.Reflections              : Reflections took 40 ms to scan 1 urls, producing 3 keys and 6 values 
+16:45:27:449  INFO 34508 --- [main] org.reflections.Reflections              : Reflections took 13 ms to scan 1 urls, producing 4 keys and 9 values 
+16:45:27:472  INFO 34508 --- [main] org.reflections.Reflections              : Reflections took 16 ms to scan 1 urls, producing 3 keys and 10 values 
+16:45:27:476  WARN 34508 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+16:45:27:488  INFO 34508 --- [main] org.reflections.Reflections              : Reflections took 10 ms to scan 1 urls, producing 1 keys and 5 values 
+16:45:27:503  INFO 34508 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 1 keys and 7 values 
+16:45:27:515  INFO 34508 --- [main] org.reflections.Reflections              : Reflections took 8 ms to scan 1 urls, producing 2 keys and 8 values 
+16:45:27:518  WARN 34508 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+16:45:27:520  INFO 34508 --- [main] com.alibaba.nacos.common.remote.client   : [2bdef3ae-fb76-4415-a824-bbe4337e9532] RpcClient init label, labels = {module=naming, source=sdk}
+16:45:27:522  INFO 34508 --- [main] com.alibaba.nacos.common.remote.client   : [2bdef3ae-fb76-4415-a824-bbe4337e9532] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+16:45:27:523  INFO 34508 --- [main] com.alibaba.nacos.common.remote.client   : [2bdef3ae-fb76-4415-a824-bbe4337e9532] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+16:45:27:524  INFO 34508 --- [main] com.alibaba.nacos.common.remote.client   : [2bdef3ae-fb76-4415-a824-bbe4337e9532] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+16:45:27:527  INFO 34508 --- [main] com.alibaba.nacos.common.remote.client   : [2bdef3ae-fb76-4415-a824-bbe4337e9532] Try to connect to server on start up, server: {serverIp = '192.168.163.130', server main port = 8848}
+16:45:28:320  INFO 34508 --- [main] com.alibaba.nacos.common.remote.client   : [2bdef3ae-fb76-4415-a824-bbe4337e9532] Success to connect to server [192.168.163.130:8848] on start up, connectionId = 1734597928334_192.168.163.133_58462
+16:45:28:323  INFO 34508 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2bdef3ae-fb76-4415-a824-bbe4337e9532] Notify connected event to listeners.
+16:45:28:324  INFO 34508 --- [main] com.alibaba.nacos.common.remote.client   : [2bdef3ae-fb76-4415-a824-bbe4337e9532] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+16:45:28:325  INFO 34508 --- [main] com.alibaba.nacos.common.remote.client   : [2bdef3ae-fb76-4415-a824-bbe4337e9532] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x0000025681836890
+16:45:28:377  INFO 34508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+16:45:28:388  INFO 34508 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP item-service 10.244.21.17:8081 register finished
+16:45:28:395  INFO 34508 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+16:45:28:399  INFO 34508 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+16:45:28:427  INFO 34508 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+16:45:28:558  INFO 34508 --- [main] com.hmall.item.ItemApplication           : Started ItemApplication in 6.187 seconds (JVM running for 7.115)
+16:45:28:947  INFO 34508 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [2bdef3ae-fb76-4415-a824-bbe4337e9532] Receive server push request, request = NotifySubscriberRequest, requestId = 18
+16:45:28:949  INFO 34508 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [2bdef3ae-fb76-4415-a824-bbe4337e9532] Ack server push request, request = NotifySubscriberRequest, requestId = 18
+16:45:40:851  INFO 34508 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:45:40:853  INFO 34508 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:45:40:855  INFO 34508 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+17:19:43:587  INFO 34508 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+17:19:44:044  INFO 34508 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+17:19:44:058 DEBUG 34508 --- [http-nio-8081-exec-2] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+17:19:44:104 DEBUG 34508 --- [http-nio-8081-exec-2] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+17:19:44:166 DEBUG 34508 --- [http-nio-8081-exec-2] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+17:20:20:838 DEBUG 34508 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
