@@ -1,6 +1,5 @@
 {
     "configurations": [
-        
         {
             "type": "java",
             "name": "Spring Boot-HMallApplication<hm-service>",
@@ -39,6 +38,16 @@
             "mainClass": "com.hmall.cart.CartApplication",
             "projectName": "cart-service",
             "args": "--server.port=8083",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GatewayApplication<gateway-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.hmall.gateway.GatewayApplication",
+            "projectName": "gateway-service",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]
