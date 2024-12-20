@@ -6,7 +6,6 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import com.hmall.cart.domain.dto.CartFormDTO;
@@ -20,9 +19,8 @@ import java.util.List;
 @Api(tags = "购物车相关接口")
 @RestController
 @RequestMapping("/carts")
-// @RequiredArgsConstructor
+@RequiredArgsConstructor
 public class CartController {
-    @Autowired
     private ICartService cartService;
 
     @ApiOperation("添加商品到购物车")

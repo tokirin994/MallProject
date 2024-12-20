@@ -18,6 +18,7 @@
         <module>hm-gateway</module>
         <module>gateway</module>
         <module>gateway-service</module>
+        <module>user-service</module>
     </modules>
 
     <parent>

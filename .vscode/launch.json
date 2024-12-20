@@ -8,6 +8,17 @@
             "mainClass": "com.hmall.HMallApplication",
             "projectName": "hm-service",
             "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=56086 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=hm-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GatewayApplication<gateway-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.hmall.gateway.GatewayApplication",
+            "projectName": "gateway-service",
+            "args": "--server.port=8080",
             "envFile": "${workspaceFolder}/.env"
         },
         {
@@ -42,12 +53,15 @@
         },
         {
             "type": "java",
-            "name": "Spring Boot-GatewayApplication<gateway-service>",
+            "name": "Spring Boot-UserApplication<user-service>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "mainClass": "com.hmall.gateway.GatewayApplication",
-            "projectName": "gateway-service",
-            "args": "",
+            "mainClass": "com.hmall.user.UserApplication",
+            "projectName": "user-service",
+            "args": [
+                "--server.port=8084",
+                "---spring.profiles.active=local"
+            ],
             "envFile": "${workspaceFolder}/.env"
         }
     ]

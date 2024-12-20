@@ -41,7 +41,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered{
         // 1. 获取请求
         ServerHttpRequest request = exchange.getRequest();
         // 2. 判断是否拦截
-        if (isExclude(request.toString())) {
+        if (isExclude(request.getPath().toString())) {
             return chain.filter(exchange);
         }
         // 3. 获取header
@@ -54,13 +54,13 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered{
         // 4. 解析
         Long userId = null;
 
-       try {
+        try {
             userId = jwtTool.parseToken(token);
-       } catch (UnauthorizedException e) {
+        } catch (UnauthorizedException e) {
             ServerHttpResponse response = exchange.getResponse();
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
             return response.setComplete();
-       }
+        }
 
         // 5. 传递用户Id
         String userInfo = userId.toString();
