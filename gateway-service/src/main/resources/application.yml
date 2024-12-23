@@ -1,28 +1,5 @@
 server:
   port: 8080
-
-spring:
-  application:
-    name: gateway
-  cloud:
-    nacos:
-      server-addr: 192.168.163.130:8848
-    gateway:
-      routes:
-      - id: item-service
-        uri: lb://item-service
-        predicates:
-        - Path=/items/**,/search/**
-      - id: cart-service
-        uri: lb://cart-service
-        predicates:
-        - Path=/carts/**
-      - id: user-service
-        uri: lb://user-service
-        predicates:
-        - Path=/users/**
-      default-filters:
-        - AddRequestHeader=truth, hhhhhh
           
 hm:
   jwt:

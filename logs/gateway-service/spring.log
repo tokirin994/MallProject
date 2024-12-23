@@ -1,0 +1,99 @@
+21:53:08:335  INFO 12400 --- [main] com.hmall.gateway.GatewayApplication     : The following 1 profile is active: "local"
+21:53:08:897  INFO 12400 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c0496c90-7029-3bd6-9ec7-26a7ec58f16e
+21:53:08:962  INFO 12400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:53:08:964  INFO 12400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:53:08:969  INFO 12400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:53:09:634  INFO 12400 --- [main] c.h.gateway.routers.DynamicRouteLoader   : 监听到路由信息
+21:53:09:656  WARN 12400 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamicRouteLoader': Invocation of init method failed; nested exception is cn.hutool.json.JSONException: Expected a ',' or ']' at 668 [character 6 line 28]
+21:53:09:676  INFO 12400 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:53:09:718 ERROR 12400 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamicRouteLoader': Invocation of init method failed; nested exception is cn.hutool.json.JSONException: Expected a ',' or ']' at 668 [character 6 line 28]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.gateway.GatewayApplication.main(GatewayApplication.java:9) ~[classes/:na]
+Caused by: cn.hutool.json.JSONException: Expected a ',' or ']' at 668 [character 6 line 28]
+	at cn.hutool.json.JSONTokener.syntaxError(JSONTokener.java:413) ~[hutool-all-5.8.11.jar:na]
+	at cn.hutool.json.JSONParser.parseTo(JSONParser.java:133) ~[hutool-all-5.8.11.jar:na]
+	at cn.hutool.json.ObjectMapper.mapFromTokener(ObjectMapper.java:251) ~[hutool-all-5.8.11.jar:na]
+	at cn.hutool.json.ObjectMapper.mapFromStr(ObjectMapper.java:228) ~[hutool-all-5.8.11.jar:na]
+	at cn.hutool.json.ObjectMapper.map(ObjectMapper.java:141) ~[hutool-all-5.8.11.jar:na]
+	at cn.hutool.json.JSONArray.<init>(JSONArray.java:167) ~[hutool-all-5.8.11.jar:na]
+	at cn.hutool.json.JSONArray.<init>(JSONArray.java:146) ~[hutool-all-5.8.11.jar:na]
+	at cn.hutool.json.JSONArray.<init>(JSONArray.java:127) ~[hutool-all-5.8.11.jar:na]
+	at cn.hutool.json.JSONArray.<init>(JSONArray.java:109) ~[hutool-all-5.8.11.jar:na]
+	at cn.hutool.json.JSONUtil.parseArray(JSONUtil.java:149) ~[hutool-all-5.8.11.jar:na]
+	at cn.hutool.json.JSONUtil.toList(JSONUtil.java:519) ~[hutool-all-5.8.11.jar:na]
+	at com.hmall.gateway.routers.DynamicRouteLoader.updateConfigInfo(DynamicRouteLoader.java:63) ~[classes/:na]
+	at com.hmall.gateway.routers.DynamicRouteLoader.initRoutrConfigListener(DynamicRouteLoader.java:56) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 18 common frames omitted
+
+21:53:09:729  WARN 12400 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+21:53:09:729  WARN 12400 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+21:53:09:730  WARN 12400 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+21:55:49:404  INFO 16420 --- [main] com.hmall.gateway.GatewayApplication     : The following 1 profile is active: "local"
+21:55:50:074  INFO 16420 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c0496c90-7029-3bd6-9ec7-26a7ec58f16e
+21:55:50:159  INFO 16420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:55:50:161  INFO 16420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:55:50:163  INFO 16420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:55:50:835  INFO 16420 --- [main] c.h.gateway.routers.DynamicRouteLoader   : 监听到路由信息
+21:55:51:421  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+21:55:51:421  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+21:55:51:422  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+21:55:51:422  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+21:55:51:422  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+21:55:51:422  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+21:55:51:423  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+21:55:51:423  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+21:55:51:423  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+21:55:51:423  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+21:55:51:424  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+21:55:51:424  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+21:55:51:425  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+21:55:51:425  INFO 16420 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+21:55:51:740  INFO 16420 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 3b90a7a3-38e6-4d29-bdca-94b20ea66686
+21:55:51:741  INFO 16420 --- [main] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] RpcClient init label, labels = {module=naming, source=sdk}
+21:55:51:743  INFO 16420 --- [main] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+21:55:51:743  INFO 16420 --- [main] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+21:55:51:744  INFO 16420 --- [main] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+21:55:51:745  INFO 16420 --- [main] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Try to connect to server on start up, server: {serverIp = '192.168.163.130', server main port = 8848}
+21:55:51:889  INFO 16420 --- [main] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Success to connect to server [192.168.163.130:8848] on start up, connectionId = 1734962152235_192.168.163.133_56188
+21:55:51:889  INFO 16420 --- [main] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+21:55:51:889  INFO 16420 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Notify connected event to listeners.
+21:55:51:890  INFO 16420 --- [main] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x00000276d84a6cd0
+21:55:52:049  INFO 16420 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+21:55:52:072  INFO 16420 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service 10.244.21.17:8080 register finished
+21:55:52:091  INFO 16420 --- [main] com.hmall.gateway.GatewayApplication     : Started GatewayApplication in 4.885 seconds (JVM running for 5.485)
+21:55:52:096  INFO 16420 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=gateway-service, group=DEFAULT_GROUP
+21:55:52:097  INFO 16420 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=gateway-service.yaml, group=DEFAULT_GROUP
+21:55:52:098  INFO 16420 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=gateway-service-local.yaml, group=DEFAULT_GROUP
+21:55:52:449  INFO 16420 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Receive server push request, request = NotifySubscriberRequest, requestId = 55
+21:55:52:453  INFO 16420 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Ack server push request, request = NotifySubscriberRequest, requestId = 55
+21:56:17:543  INFO 16420 --- [nacos-grpc-client-executor-15] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Receive server push request, request = NotifySubscriberRequest, requestId = 56
+21:56:17:544  INFO 16420 --- [nacos-grpc-client-executor-15] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Ack server push request, request = NotifySubscriberRequest, requestId = 56
+21:56:17:946  INFO 16420 --- [nacos-grpc-client-executor-16] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Receive server push request, request = NotifySubscriberRequest, requestId = 57
+21:56:17:946  INFO 16420 --- [nacos-grpc-client-executor-16] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Ack server push request, request = NotifySubscriberRequest, requestId = 57
+21:56:22:277  INFO 16420 --- [nacos-grpc-client-executor-20] com.alibaba.nacos.common.remote.client   : [3b90a7a3-38e6-4d29-bdca-94b20ea66686] Receive server push request, request = NotifySubscriberRequest, requestId = 58

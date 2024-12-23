@@ -21,7 +21,7 @@ import java.util.List;
 @RequestMapping("/carts")
 @RequiredArgsConstructor
 public class CartController {
-    private ICartService cartService;
+    private final ICartService cartService;
 
     @ApiOperation("添加商品到购物车")
     @PostMapping

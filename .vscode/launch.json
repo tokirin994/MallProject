@@ -18,7 +18,10 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.hmall.gateway.GatewayApplication",
             "projectName": "gateway-service",
-            "args": "--server.port=8080",
+            "args": [
+                "--server.port=8080",
+                "---spring.profiles.active=local"
+            ],
             "envFile": "${workspaceFolder}/.env"
         },
         {
@@ -28,7 +31,10 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.hmall.item.ItemApplication",
             "projectName": "item-service",
-            "args": "--server.port=8081",
+            "args": [
+                "--server.port=8081",
+                "---spring.profiles.active=local"
+            ],
             "envFile": "${workspaceFolder}/.env"
         },
         {
@@ -38,7 +44,10 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.hmall.item.ItemApplication",
             "projectName": "item-service",
-            "args": "--server.port=8082",
+            "args": [
+                "--server.port=8082",
+                "---spring.profiles.active=local"
+            ],
             "envFile": "${workspaceFolder}/.env"
         },
         {
@@ -48,7 +57,10 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.hmall.cart.CartApplication",
             "projectName": "cart-service",
-            "args": "--server.port=8083",
+            "args": [
+                "--server.port=8083",
+                "---spring.profiles.active=local"
+            ],
             "envFile": "${workspaceFolder}/.env"
         },
         {
@@ -62,6 +74,16 @@
                 "--server.port=8084",
                 "---spring.profiles.active=local"
             ],
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiApplication<hm-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.hmall.api.ApiApplication",
+            "projectName": "hm-api",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]
