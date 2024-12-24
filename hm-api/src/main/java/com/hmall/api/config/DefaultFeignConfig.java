@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.springframework.context.annotation.Bean;
 
+import com.hmall.api.client.fallback.ItemClientFallBackFactory;
 import com.hmall.common.utils.UserContext;
 
 import feign.Logger;
@@ -32,6 +33,11 @@ public class DefaultFeignConfig {
         };
         return null;
         
+    }
+
+    @Bean
+    public ItemClientFallBackFactory itemClientFallBackFactory(){
+        return new ItemClientFallBackFactory();
     }
     
 
