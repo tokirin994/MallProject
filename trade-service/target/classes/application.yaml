@@ -1,0 +1,23 @@
+server:
+  port: 8086
+
+spring:
+  cloud: 
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+      http-method-specify: true # 开启请求方式前缀
+
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp连接池支持
+  sentinel:
+    enabled: true
+    
+hm:
+  db:
+    database: hm-trade
+  swagger:
+    title: 订单服务接口文档
+    package: com.hmall.trade.controller
+  

@@ -3,7 +3,7 @@ server:
 
 hm:
   db:
-    database: hmall
+    database: hm-user
   jwt:
     location: classpath:hmall.jks
     alias: hmall

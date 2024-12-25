@@ -78,12 +78,28 @@
         },
         {
             "type": "java",
-            "name": "Spring Boot-ApiApplication<hm-api>",
+            "name": "Spring Boot-PayApplication<pay-service>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "mainClass": "com.hmall.api.ApiApplication",
-            "projectName": "hm-api",
-            "args": "",
+            "mainClass": "com.hmall.pay.PayApplication",
+            "projectName": "pay-service",
+            "args": [
+                "--server.port=8085",
+                "---spring.profiles.active=local"
+            ],
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TradeApplication<trade-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.hmall.trade.TradeApplication",
+            "projectName": "trade-service",
+            "args": [
+                "--server.port=8086",
+                "---spring.profiles.active=local"
+            ],
             "envFile": "${workspaceFolder}/.env"
         }
     ]
