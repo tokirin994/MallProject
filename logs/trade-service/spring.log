@@ -1,181 +1,146 @@
-19:32:09:050  INFO 34464 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
-19:32:10:291  INFO 34464 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=959a09a8-a68a-318b-af2f-f85d214db35f
-19:32:11:225  INFO 34464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
-19:32:11:241  INFO 34464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-19:32:11:242  INFO 34464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-19:32:11:448  INFO 34464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-19:32:11:449  INFO 34464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2365 ms
-19:32:11:822  INFO 34464 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-19:32:12:590  INFO 34464 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
-19:32:12:596  WARN 34464 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [C:\Users\12046\Desktop\routine\MallProject\trade-service\target\classes\com\hmall\trade\controller\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl' defined in file [C:\Users\12046\Desktop\routine\MallProject\trade-service\target\classes\com\hmall\trade\service\impl\OrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.hmall.api.client.CartClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: Method CartClient#removeByItemIds(Set) not annotated with HTTP method type (ex. GET, POST)
-Warnings:
-- 
-19:32:12:604  INFO 34464 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-19:32:12:620  INFO 34464 --- [main] ConditionEvaluationReportLoggingListener : 
+19:31:22:049  INFO 5808 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+19:31:24:148  INFO 5808 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0e275aa-a993-36f3-899b-4974a3a6081e
+19:31:24:285  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:24:288  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:24:291  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:24:384  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:24:390  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:24:393  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:24:397  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x0000013c1f5cdaf0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:24:399  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:24:406  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:24:414  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:24:420  INFO 5808 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+19:31:24:547  INFO 5808 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+19:31:24:560  INFO 5808 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+19:31:24:708  INFO 5808 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+19:31:24:906  INFO 5808 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+19:31:25:146  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 92c44761-1001-495e-a042-8f562a80a651
+19:31:25:147  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [92c44761-1001-495e-a042-8f562a80a651] RpcClient init label, labels = {module=naming, source=sdk}
+19:31:25:151  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [92c44761-1001-495e-a042-8f562a80a651] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:31:25:152  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [92c44761-1001-495e-a042-8f562a80a651] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:31:25:154  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [92c44761-1001-495e-a042-8f562a80a651] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:31:25:155  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [92c44761-1001-495e-a042-8f562a80a651] Try to connect to server on start up, server: {serverIp = '192.168.163.130', server main port = 8848}
+19:31:25:304  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [92c44761-1001-495e-a042-8f562a80a651] Success to connect to server [192.168.163.130:8848] on start up, connectionId = 1735212685336_192.168.163.133_58406
+19:31:25:304  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [92c44761-1001-495e-a042-8f562a80a651] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:31:25:304  INFO 5808 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [92c44761-1001-495e-a042-8f562a80a651] Notify connected event to listeners.
+19:31:25:305  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [92c44761-1001-495e-a042-8f562a80a651] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x0000013c1f4ab780
+19:31:25:410  INFO 5808 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.163.130:8099
+19:31:25:423  INFO 5808 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.163.130:8099,msg:< RegisterTMRequest{applicationId='trade-service', transactionServiceGroup='hmall'} >
+19:31:25:651  WARN 5808 --- [NettyClientSelector_TMROLE_1_1] ServiceLoader$InnerEnhancedServiceLoader : Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
+19:31:25:755  INFO 5808 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x099b8434, L:/192.168.163.133:58407 - R:/192.168.163.130:8099]
+19:31:25:766  INFO 5808 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 175 ms, version:1.5.2,role:TMROLE,channel:[id: 0x099b8434, L:/192.168.163.133:58407 - R:/192.168.163.130:8099]
+19:31:25:767  INFO 5808 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[trade-service] txServiceGroup[hmall]
+19:31:25:782  INFO 5808 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+19:31:25:783  INFO 5808 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+19:31:25:795  INFO 5808 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+19:31:25:795  INFO 5808 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[trade-service] txServiceGroup[hmall]
+19:31:25:796  INFO 5808 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+19:31:25:799  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:25:842  INFO 5808 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [92c44761-1001-495e-a042-8f562a80a651] Receive server push request, request = NotifySubscriberRequest, requestId = 200
+19:31:25:848  INFO 5808 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [92c44761-1001-495e-a042-8f562a80a651] Ack server push request, request = NotifySubscriberRequest, requestId = 200
+19:31:26:337  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:26:344  INFO 5808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:31:26:919  INFO 5808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+19:31:26:948  INFO 5808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:31:26:949  INFO 5808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:31:27:170  INFO 5808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:31:27:171  INFO 5808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5055 ms
+19:31:27:555  INFO 5808 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+19:31:28:094  INFO 5808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+19:31:28:690  INFO 5808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+19:31:28:712  INFO 5808 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.163.130:8099
+19:31:28:712  INFO 5808 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.163.130:3306/hm-trade
+19:31:28:713  INFO 5808 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.163.130:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.163.130:3306/hm-trade', applicationId='trade-service', transactionServiceGroup='hmall'} >
+19:31:28:723  INFO 5808 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x429ca4a8, L:/192.168.163.133:58424 - R:/192.168.163.130:8099]
+19:31:28:723  INFO 5808 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 7 ms, version:1.5.2,role:RMROLE,channel:[id: 0x429ca4a8, L:/192.168.163.133:58424 - R:/192.168.163.130:8099]
+19:31:29:095  INFO 5808 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+19:31:29:193  INFO 5808 --- [main] i.s.s.a.GlobalTransactionScanner         : Bean[com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$47fc6426] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+19:31:29:487  INFO 5808 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+19:31:29:939  INFO 5808 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+19:31:30:136  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 2158cd69-c54b-4e53-b07c-6f5f04da2fc3
+19:31:30:136  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] RpcClient init label, labels = {module=naming, source=sdk}
+19:31:30:137  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:31:30:137  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:31:30:137  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:31:30:138  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Try to connect to server on start up, server: {serverIp = '192.168.163.130', server main port = 8848}
+19:31:30:259  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Success to connect to server [192.168.163.130:8848] on start up, connectionId = 1735212690308_192.168.163.133_58434
+19:31:30:259  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:31:30:259  INFO 5808 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Notify connected event to listeners.
+19:31:30:259  INFO 5808 --- [main] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x0000013c1f4ab780
+19:31:30:285  INFO 5808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+19:31:30:298  INFO 5808 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.244.21.17:8085 register finished
+19:31:30:308  INFO 5808 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+19:31:30:317  INFO 5808 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+19:31:30:354  INFO 5808 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+19:31:30:494  INFO 5808 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 14.299 seconds (JVM running for 15.516)
+19:31:30:504  INFO 5808 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service, group=DEFAULT_GROUP
+19:31:30:505  INFO 5808 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service-local.yaml, group=DEFAULT_GROUP
+19:31:30:507  INFO 5808 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service.yaml, group=DEFAULT_GROUP
+19:31:30:856  INFO 5808 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Receive server push request, request = NotifySubscriberRequest, requestId = 202
+19:31:30:859  INFO 5808 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Ack server push request, request = NotifySubscriberRequest, requestId = 202
+19:33:54:074  INFO 5808 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:33:54:076  INFO 5808 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+19:33:54:080  INFO 5808 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+19:33:54:440 DEBUG 5808 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+19:33:54:487 DEBUG 5808 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1871933296552800257(Long)
+19:33:54:550 DEBUG 5808 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+19:34:48:743  INFO 5808 --- [http-nio-8085-exec-2] io.seata.tm.TransactionManagerHolder     : TransactionManager Singleton io.seata.tm.DefaultTransactionManager@4c5faed
+19:34:48:813  INFO 5808 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.163.130:8099:36629696881897473]
+19:34:48:905 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+19:34:48:905 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] user-info: 1
+19:34:48:906 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
+19:34:49:112 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (206ms)
+19:34:49:113 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
+19:34:49:113 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
+19:34:49:114 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Thu, 26 Dec 2024 11:34:49 GMT
+19:34:49:114 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
+19:34:49:114 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
+19:34:49:115 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
+19:34:49:116 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:34:49:116 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (456-byte body)
+19:34:49:145 DEBUG 5808 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+19:34:49:150 DEBUG 5808 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1872244672248786945(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
+19:34:49:153 DEBUG 5808 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+19:34:49:164 DEBUG 5808 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+19:34:49:167 DEBUG 5808 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1872244672248786945(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+19:34:49:175 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=100001511821 HTTP/1.1
+19:34:49:176 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+19:34:49:176 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+19:34:49:254 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (77ms)
+19:34:49:254 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+19:34:49:254 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+19:34:49:255 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Thu, 26 Dec 2024 11:34:49 GMT
+19:34:49:255 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+19:34:49:255 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+19:34:49:260 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+19:34:49:261 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 35
+19:34:49:261 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+19:34:49:261 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+19:34:49:262 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+19:34:49:262 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"100001511821","num":1}]
+19:34:49:262 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (35-byte body)
+19:34:49:450 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 500  (187ms)
+19:34:49:450 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: close
+19:34:49:450 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-type: application/json
+19:34:49:451 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Thu, 26 Dec 2024 11:34:49 GMT
+19:34:49:451 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] transfer-encoding: chunked
+19:34:49:451 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+19:34:49:452 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] {"timestamp":"2024-12-26T11:34:49.445+00:00","status":500,"error":"Internal Server Error","path":"/items/stock/deduct"}
+19:34:49:452 DEBUG 5808 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (119-byte body)
+19:34:49:463 ERROR 5808 --- [http-nio-8085-exec-2] c.h.a.c.f.ItemClientFallBackFactory      : 减少商品库存失败！！
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-19:32:12:656 ERROR 34464 --- [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [C:\Users\12046\Desktop\routine\MallProject\trade-service\target\classes\com\hmall\trade\controller\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl' defined in file [C:\Users\12046\Desktop\routine\MallProject\trade-service\target\classes\com\hmall\trade\service\impl\OrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.hmall.api.client.CartClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: Method CartClient#removeByItemIds(Set) not annotated with HTTP method type (ex. GET, POST)
-Warnings:
-- 
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.27.jar:5.3.27]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar:5.3.27]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
-	at com.hmall.trade.TradeApplication.main(TradeApplication.java:15) ~[classes/:na]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl' defined in file [C:\Users\12046\Desktop\routine\MallProject\trade-service\target\classes\com\hmall\trade\service\impl\OrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.hmall.api.client.CartClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: Method CartClient#removeByItemIds(Set) not annotated with HTTP method type (ex. GET, POST)
-Warnings:
-- 
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.27.jar:5.3.27]
-	... 19 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.hmall.api.client.CartClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: Method CartClient#removeByItemIds(Set) not annotated with HTTP method type (ex. GET, POST)
-Warnings:
-- 
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.27.jar:5.3.27]
-	... 33 common frames omitted
-Caused by: java.lang.IllegalStateException: Method CartClient#removeByItemIds(Set) not annotated with HTTP method type (ex. GET, POST)
-Warnings:
-- 
-	at feign.Util.checkState(Util.java:122) ~[feign-core-11.8.jar:na]
-	at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:115) ~[feign-core-11.8.jar:na]
-	at org.springframework.cloud.openfeign.support.SpringMvcContract.parseAndValidateMetadata(SpringMvcContract.java:193) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:65) ~[feign-core-11.8.jar:na]
-	at com.alibaba.cloud.sentinel.feign.SentinelContractHolder.parseAndValidateMetadata(SentinelContractHolder.java:49) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
-	at feign.ReflectiveFeign$ParseHandlersByName.apply(ReflectiveFeign.java:151) ~[feign-core-11.8.jar:na]
-	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:49) ~[feign-core-11.8.jar:na]
-	at feign.Feign$Builder.target(Feign.java:268) ~[feign-core-11.8.jar:na]
-	at org.springframework.cloud.openfeign.DefaultTargeter.target(DefaultTargeter.java:30) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:379) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:427) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:402) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at org.springframework.cloud.openfeign.FeignClientsRegistrar.lambda$registerFeignClient$0(FeignClientsRegistrar.java:235) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.obtainFromSupplier(AbstractAutowireCapableBeanFactory.java:1249) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
-	... 42 common frames omitted
-
-19:32:12:673  WARN 34464 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-19:32:12:673  WARN 34464 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-19:34:29:025  INFO 30168 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
-19:34:30:413  INFO 30168 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=959a09a8-a68a-318b-af2f-f85d214db35f
-19:34:31:514  INFO 30168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
-19:34:31:538  INFO 30168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-19:34:31:539  INFO 30168 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-19:34:31:860  INFO 30168 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-19:34:31:862  INFO 30168 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2809 ms
-19:34:32:532  INFO 30168 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-19:34:33:378  INFO 30168 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
-19:34:33:917  INFO 30168 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-19:34:34:453  INFO 30168 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-19:34:34:735  INFO 30168 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 27a94618-29fa-4818-bb03-e8310cbe26c7
-19:34:34:736  INFO 30168 --- [main] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] RpcClient init label, labels = {module=naming, source=sdk}
-19:34:34:740  INFO 30168 --- [main] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-19:34:34:741  INFO 30168 --- [main] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-19:34:34:742  INFO 30168 --- [main] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-19:34:34:743  INFO 30168 --- [main] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Try to connect to server on start up, server: {serverIp = '192.168.163.130', server main port = 8848}
-19:34:34:865  INFO 30168 --- [main] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Success to connect to server [192.168.163.130:8848] on start up, connectionId = 1735126475811_192.168.163.133_65112
-19:34:34:866  INFO 30168 --- [main] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-19:34:34:866  INFO 30168 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Notify connected event to listeners.
-19:34:34:866  INFO 30168 --- [main] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000001b01b4a71e0
-19:34:34:924  INFO 30168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
-19:34:34:941  INFO 30168 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.244.21.17:8086 register finished
-19:34:34:953  INFO 30168 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-19:34:34:958  INFO 30168 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-19:34:34:983  INFO 30168 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-19:34:35:113  INFO 30168 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 8.94 seconds (JVM running for 9.847)
-19:34:35:124  INFO 30168 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service, group=DEFAULT_GROUP
-19:34:35:126  INFO 30168 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service-local.yaml, group=DEFAULT_GROUP
-19:34:35:127  INFO 30168 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service.yaml, group=DEFAULT_GROUP
-19:34:35:400  INFO 30168 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Receive server push request, request = NotifySubscriberRequest, requestId = 12
-19:34:35:405  INFO 30168 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Ack server push request, request = NotifySubscriberRequest, requestId = 12
-19:49:48:746  INFO 30168 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-19:49:48:747  INFO 30168 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-19:49:48:749  INFO 30168 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-19:49:48:960  INFO 30168 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-19:49:49:405  INFO 30168 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-19:49:49:433 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
-19:49:49:434 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
-19:49:49:686 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (251ms)
-19:49:49:687 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
-19:49:49:687 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
-19:49:49:688 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Wed, 25 Dec 2024 11:49:49 GMT
-19:49:49:688 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
-19:49:49:689 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
-19:49:49:689 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
-19:49:49:690 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
-19:49:49:691 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (460-byte body)
-19:49:49:749 DEBUG 30168 --- [http-nio-8086-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
-19:49:49:791 DEBUG 30168 --- [http-nio-8086-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1871886061748117505(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
-19:49:49:796 DEBUG 30168 --- [http-nio-8086-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
-19:49:49:810 DEBUG 30168 --- [http-nio-8086-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
-19:49:49:813 DEBUG 30168 --- [http-nio-8086-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1871886061748117505(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
-19:49:49:847 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> DELETE http://cart-service/carts HTTP/1.1
-19:49:49:847 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Length: 16
-19:49:49:848 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Type: application/json
-19:49:49:848 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-19:49:49:848 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ["100001511821"]
-19:49:49:848 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> END HTTP (16-byte body)
-19:49:49:990 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- HTTP/1.1 400  (141ms)
-19:49:49:991 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] connection: close
-19:49:49:991 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] content-type: application/json
-19:49:49:991 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] date: Wed, 25 Dec 2024 11:49:49 GMT
-19:49:49:992 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] transfer-encoding: chunked
-19:49:49:992 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-19:49:49:993 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] {"timestamp":"2024-12-25T11:49:49.967+00:00","status":400,"error":"Bad Request","path":"/carts"}
-19:49:49:993 DEBUG 30168 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- END HTTP (96-byte body)
-19:49:50:014 ERROR 30168 --- [http-nio-8086-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T11:49:49.967+00:00","status":400,"error":"Bad Request","path":"/carts"}]] with root cause
-
-feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T11:49:49.967+00:00","status":400,"error":"Bad Request","path":"/carts"}]
-	at feign.FeignException.clientErrorStatus(FeignException.java:213) ~[feign-core-11.8.jar:na]
-	at feign.FeignException.errorStatus(FeignException.java:194) ~[feign-core-11.8.jar:na]
+feign.FeignException$InternalServerError: [500 ] during [PUT] to [http://item-service/items/stock/deduct] [ItemClient#deductStock(List)]: [{"timestamp":"2024-12-26T11:34:49.445+00:00","status":500,"error":"Internal Server Error","path":"/items/stock/deduct"}]
+	at feign.FeignException.serverErrorStatus(FeignException.java:250) ~[feign-core-11.8.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:197) ~[feign-core-11.8.jar:na]
 	at feign.FeignException.errorStatus(FeignException.java:185) ~[feign-core-11.8.jar:na]
 	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-11.8.jar:na]
 	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-11.8.jar:na]
 	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-11.8.jar:na]
 	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-11.8.jar:na]
 	at com.alibaba.cloud.sentinel.feign.SentinelInvocationHandler.invoke(SentinelInvocationHandler.java:109) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
-	at jdk.proxy2/jdk.proxy2.$Proxy132.removeByItemIds(Unknown Source) ~[na:na]
-	at com.hmall.trade.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:78) ~[classes/:na]
+	at jdk.proxy2/jdk.proxy2.$Proxy131.deductStock(Unknown Source) ~[na:na]
+	at com.hmall.trade.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:84) ~[classes/:na]
 	at com.hmall.trade.service.impl.OrderServiceImpl$$FastClassBySpringCGLIB$$863dd453.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.27.jar:5.3.27]
@@ -186,8 +151,14 @@ feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor$2.execute(GlobalTransactionalInterceptor.java:205) ~[seata-all-1.5.2.jar:1.5.2]
+	at io.seata.tm.api.TransactionalTemplate.execute(TransactionalTemplate.java:127) ~[seata-all-1.5.2.jar:1.5.2]
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor.handleGlobalTransaction(GlobalTransactionalInterceptor.java:202) ~[seata-all-1.5.2.jar:1.5.2]
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor.invoke(GlobalTransactionalInterceptor.java:172) ~[seata-all-1.5.2.jar:1.5.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.27.jar:5.3.27]
-	at com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$464cbc02.createOrder(<generated>) ~[classes/:na]
+	at com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$47fc6426.createOrder(<generated>) ~[classes/:na]
 	at com.hmall.trade.controller.OrderController.createOrder(OrderController.java:31) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
@@ -238,53 +209,74 @@ feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-19:49:50:105  INFO 30168 --- [nacos-grpc-client-executor-198] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Receive server push request, request = NotifySubscriberRequest, requestId = 15
-19:49:50:106  INFO 30168 --- [nacos-grpc-client-executor-198] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Ack server push request, request = NotifySubscriberRequest, requestId = 15
-19:49:50:405  INFO 30168 --- [nacos-grpc-client-executor-199] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Receive server push request, request = NotifySubscriberRequest, requestId = 16
-19:49:50:406  INFO 30168 --- [nacos-grpc-client-executor-199] com.alibaba.nacos.common.remote.client   : [27a94618-29fa-4818-bb03-e8310cbe26c7] Ack server push request, request = NotifySubscriberRequest, requestId = 16
-19:52:08:975 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
-19:52:08:981 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
-19:52:09:126 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (139ms)
-19:52:09:133 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
-19:52:09:140 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
-19:52:09:146 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Wed, 25 Dec 2024 11:52:09 GMT
-19:52:09:151 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
-19:52:09:157 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
-19:52:09:161 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
-19:52:09:172 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
-19:52:09:183 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (460-byte body)
-19:52:24:108 DEBUG 30168 --- [http-nio-8086-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
-19:52:24:142 DEBUG 30168 --- [http-nio-8086-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1871886709147328513(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
-19:52:24:168 DEBUG 30168 --- [http-nio-8086-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
-19:52:37:435 DEBUG 30168 --- [http-nio-8086-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
-19:52:37:482 DEBUG 30168 --- [http-nio-8086-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1871886709147328513(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
-19:52:43:104 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> DELETE http://cart-service/carts HTTP/1.1
-19:52:43:109 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Length: 16
-19:52:43:119 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Type: application/json
-19:52:43:126 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-19:52:43:132 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ["100001511821"]
-19:52:43:137 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> END HTTP (16-byte body)
-19:52:43:208 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- HTTP/1.1 400  (64ms)
-19:52:43:213 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] connection: close
-19:52:43:219 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] content-type: application/json
-19:52:43:225 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] date: Wed, 25 Dec 2024 11:52:43 GMT
-19:52:43:230 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] transfer-encoding: chunked
-19:52:43:235 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-19:52:43:242 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] {"timestamp":"2024-12-25T11:52:43.195+00:00","status":400,"error":"Bad Request","path":"/carts"}
-19:52:43:247 DEBUG 30168 --- [http-nio-8086-exec-2] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- END HTTP (96-byte body)
-19:53:19:074 ERROR 30168 --- [http-nio-8086-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T11:52:43.195+00:00","status":400,"error":"Bad Request","path":"/carts"}]] with root cause
+19:34:49:536  INFO 5808 --- [rpcDispatch_RMROLE_1_1_24] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.163.130:8099:36629696881897473,branchId=36629696881897475,branchType=XA,resourceId=jdbc:mysql://192.168.163.130:3306/hm-trade,applicationData=null
+19:34:49:538  INFO 5808 --- [rpcDispatch_RMROLE_1_1_24] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.163.130:8099:36629696881897473 36629696881897475 jdbc:mysql://192.168.163.130:3306/hm-trade null
+19:34:49:543  INFO 5808 --- [rpcDispatch_RMROLE_1_1_24] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.163.130:8099:36629696881897473-36629696881897475 was committed.
+19:34:49:544  INFO 5808 --- [rpcDispatch_RMROLE_1_1_24] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:34:49:593  INFO 5808 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.163.130:8099:36629696881897473
+19:34:49:594  INFO 5808 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.163.130:8099:36629696881897473] commit status: Committed
+19:34:49:598  INFO 5808 --- [nacos-grpc-client-executor-54] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Receive server push request, request = NotifySubscriberRequest, requestId = 209
+19:34:49:600  INFO 5808 --- [nacos-grpc-client-executor-54] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Ack server push request, request = NotifySubscriberRequest, requestId = 209
+19:34:49:705  INFO 5808 --- [nacos-grpc-client-executor-55] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Receive server push request, request = NotifySubscriberRequest, requestId = 210
+19:34:49:707  INFO 5808 --- [nacos-grpc-client-executor-55] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Ack server push request, request = NotifySubscriberRequest, requestId = 210
+19:34:49:820 DEBUG 5808 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+19:34:49:823 DEBUG 5808 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1872244672248786945(Long)
+19:34:49:827 DEBUG 5808 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+19:48:01:031  INFO 5808 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.163.130:8099:36629696881897485]
+19:48:01:041 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+19:48:01:042 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] user-info: 1
+19:48:01:042 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
+19:48:01:061 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (18ms)
+19:48:01:061 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
+19:48:01:061 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
+19:48:01:062 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Thu, 26 Dec 2024 11:48:01 GMT
+19:48:01:062 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
+19:48:01:062 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
+19:48:01:063 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
+19:48:01:063 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:48:01:064 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (456-byte body)
+19:48:01:065 DEBUG 5808 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+19:48:01:066 DEBUG 5808 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1872247993802010626(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
+19:48:01:067 DEBUG 5808 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+19:48:01:068 DEBUG 5808 --- [http-nio-8085-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+19:48:01:069 DEBUG 5808 --- [http-nio-8085-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1872247993802010626(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+19:48:01:071 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=100001511821 HTTP/1.1
+19:48:01:071 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+19:48:01:071 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+19:48:01:088 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (16ms)
+19:48:01:088 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+19:48:01:088 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+19:48:01:088 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Thu, 26 Dec 2024 11:48:01 GMT
+19:48:01:089 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+19:48:01:089 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+19:48:01:089 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+19:48:01:089 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 35
+19:48:01:089 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+19:48:01:089 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+19:48:01:089 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+19:48:01:089 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"100001511821","num":1}]
+19:48:01:089 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (35-byte body)
+19:48:01:120 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 500  (30ms)
+19:48:01:121 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: close
+19:48:01:121 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-type: application/json
+19:48:01:122 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Thu, 26 Dec 2024 11:48:01 GMT
+19:48:01:122 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] transfer-encoding: chunked
+19:48:01:122 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+19:48:01:123 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] {"timestamp":"2024-12-26T11:48:01.120+00:00","status":500,"error":"Internal Server Error","path":"/items/stock/deduct"}
+19:48:01:124 DEBUG 5808 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (119-byte body)
+19:48:01:125 ERROR 5808 --- [http-nio-8085-exec-5] c.h.a.c.f.ItemClientFallBackFactory      : 减少商品库存失败！！
 
-feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T11:52:43.195+00:00","status":400,"error":"Bad Request","path":"/carts"}]
-	at feign.FeignException.clientErrorStatus(FeignException.java:213) ~[feign-core-11.8.jar:na]
-	at feign.FeignException.errorStatus(FeignException.java:194) ~[feign-core-11.8.jar:na]
+feign.FeignException$InternalServerError: [500 ] during [PUT] to [http://item-service/items/stock/deduct] [ItemClient#deductStock(List)]: [{"timestamp":"2024-12-26T11:48:01.120+00:00","status":500,"error":"Internal Server Error","path":"/items/stock/deduct"}]
+	at feign.FeignException.serverErrorStatus(FeignException.java:250) ~[feign-core-11.8.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:197) ~[feign-core-11.8.jar:na]
 	at feign.FeignException.errorStatus(FeignException.java:185) ~[feign-core-11.8.jar:na]
 	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-11.8.jar:na]
 	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-11.8.jar:na]
 	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-11.8.jar:na]
 	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-11.8.jar:na]
 	at com.alibaba.cloud.sentinel.feign.SentinelInvocationHandler.invoke(SentinelInvocationHandler.java:109) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
-	at jdk.proxy2/jdk.proxy2.$Proxy132.removeByItemIds(Unknown Source) ~[na:na]
-	at com.hmall.trade.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:78) ~[classes/:na]
+	at jdk.proxy2/jdk.proxy2.$Proxy131.deductStock(Unknown Source) ~[na:na]
+	at com.hmall.trade.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:84) ~[classes/:na]
 	at com.hmall.trade.service.impl.OrderServiceImpl$$FastClassBySpringCGLIB$$863dd453.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.27.jar:5.3.27]
@@ -295,8 +287,14 @@ feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor$2.execute(GlobalTransactionalInterceptor.java:205) ~[seata-all-1.5.2.jar:1.5.2]
+	at io.seata.tm.api.TransactionalTemplate.execute(TransactionalTemplate.java:127) ~[seata-all-1.5.2.jar:1.5.2]
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor.handleGlobalTransaction(GlobalTransactionalInterceptor.java:202) ~[seata-all-1.5.2.jar:1.5.2]
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor.invoke(GlobalTransactionalInterceptor.java:172) ~[seata-all-1.5.2.jar:1.5.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.27.jar:5.3.27]
-	at com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$464cbc02.createOrder(<generated>) ~[classes/:na]
+	at com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$47fc6426.createOrder(<generated>) ~[classes/:na]
 	at com.hmall.trade.controller.OrderController.createOrder(OrderController.java:31) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
@@ -347,49 +345,70 @@ feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-19:53:51:256 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
-19:53:51:258 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
-19:53:51:276 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (18ms)
-19:53:51:277 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
-19:53:51:277 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
-19:53:51:278 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Wed, 25 Dec 2024 11:53:51 GMT
-19:53:51:278 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
-19:53:51:279 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
-19:53:51:279 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
-19:53:51:279 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
-19:53:51:280 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (460-byte body)
-19:53:52:626 DEBUG 30168 --- [http-nio-8086-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
-19:53:52:659 DEBUG 30168 --- [http-nio-8086-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1871887080448090113(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
-19:53:52:681 DEBUG 30168 --- [http-nio-8086-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
-19:53:56:533 DEBUG 30168 --- [http-nio-8086-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
-19:53:56:577 DEBUG 30168 --- [http-nio-8086-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1871887080448090113(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
-19:54:10:731 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> DELETE http://cart-service/carts HTTP/1.1
-19:54:10:736 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Length: 16
-19:54:10:742 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Type: application/json
-19:54:10:747 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-19:54:10:750 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ["100001511821"]
-19:54:10:756 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> END HTTP (16-byte body)
-19:54:10:817 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- HTTP/1.1 400  (55ms)
-19:54:10:822 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] connection: close
-19:54:10:828 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] content-type: application/json
-19:54:10:833 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] date: Wed, 25 Dec 2024 11:54:10 GMT
-19:54:10:838 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] transfer-encoding: chunked
-19:54:10:843 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-19:54:10:849 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] {"timestamp":"2024-12-25T11:54:10.805+00:00","status":400,"error":"Bad Request","path":"/carts"}
-19:54:10:854 DEBUG 30168 --- [http-nio-8086-exec-3] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- END HTTP (96-byte body)
-19:54:14:557 ERROR 30168 --- [http-nio-8086-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T11:54:10.805+00:00","status":400,"error":"Bad Request","path":"/carts"}]] with root cause
+19:48:01:146  INFO 5808 --- [rpcDispatch_RMROLE_1_2_24] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.163.130:8099:36629696881897485,branchId=36629696881897487,branchType=XA,resourceId=jdbc:mysql://192.168.163.130:3306/hm-trade,applicationData=null
+19:48:01:146  INFO 5808 --- [rpcDispatch_RMROLE_1_2_24] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.163.130:8099:36629696881897485 36629696881897487 jdbc:mysql://192.168.163.130:3306/hm-trade null
+19:48:01:148  INFO 5808 --- [rpcDispatch_RMROLE_1_2_24] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.163.130:8099:36629696881897485-36629696881897487 was committed.
+19:48:01:148  INFO 5808 --- [rpcDispatch_RMROLE_1_2_24] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:48:01:170  INFO 5808 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.163.130:8099:36629696881897485
+19:48:01:171  INFO 5808 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.163.130:8099:36629696881897485] commit status: Committed
+19:48:01:313 DEBUG 5808 --- [http-nio-8085-exec-6] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+19:48:01:314 DEBUG 5808 --- [http-nio-8085-exec-6] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1872247993802010626(Long)
+19:48:01:318 DEBUG 5808 --- [http-nio-8085-exec-6] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+19:53:45:764  INFO 5808 --- [http-nio-8085-exec-8] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.163.130:8099:36629696881897497]
+19:53:45:774 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+19:53:45:774 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] user-info: 1
+19:53:45:774 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
+19:53:45:793 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (18ms)
+19:53:45:793 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
+19:53:45:794 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
+19:53:45:794 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Thu, 26 Dec 2024 11:53:45 GMT
+19:53:45:794 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
+19:53:45:794 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
+19:53:45:795 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
+19:53:45:795 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:53:45:795 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (456-byte body)
+19:53:45:797 DEBUG 5808 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+19:53:45:798 DEBUG 5808 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1872249439712817154(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
+19:53:45:800 DEBUG 5808 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+19:53:45:801 DEBUG 5808 --- [http-nio-8085-exec-8] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+19:53:45:802 DEBUG 5808 --- [http-nio-8085-exec-8] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1872249439712817154(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+19:53:45:804 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=100001511821 HTTP/1.1
+19:53:45:805 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+19:53:45:805 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+19:53:45:822 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (16ms)
+19:53:45:822 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+19:53:45:823 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+19:53:45:823 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Thu, 26 Dec 2024 11:53:45 GMT
+19:53:45:823 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+19:53:45:823 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+19:53:45:824 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+19:53:45:824 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 35
+19:53:45:825 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+19:53:45:825 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+19:53:45:825 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+19:53:45:825 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"100001511821","num":1}]
+19:53:45:825 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (35-byte body)
+19:53:45:866 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 500  (40ms)
+19:53:45:867 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: close
+19:53:45:868 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-type: application/json
+19:53:45:868 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Thu, 26 Dec 2024 11:53:45 GMT
+19:53:45:869 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] transfer-encoding: chunked
+19:53:45:869 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+19:53:45:871 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] {"timestamp":"2024-12-26T11:53:45.865+00:00","status":500,"error":"Internal Server Error","path":"/items/stock/deduct"}
+19:53:45:871 DEBUG 5808 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (119-byte body)
+19:53:45:873 ERROR 5808 --- [http-nio-8085-exec-8] c.h.a.c.f.ItemClientFallBackFactory      : 减少商品库存失败！！
 
-feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T11:54:10.805+00:00","status":400,"error":"Bad Request","path":"/carts"}]
-	at feign.FeignException.clientErrorStatus(FeignException.java:213) ~[feign-core-11.8.jar:na]
-	at feign.FeignException.errorStatus(FeignException.java:194) ~[feign-core-11.8.jar:na]
+feign.FeignException$InternalServerError: [500 ] during [PUT] to [http://item-service/items/stock/deduct] [ItemClient#deductStock(List)]: [{"timestamp":"2024-12-26T11:53:45.865+00:00","status":500,"error":"Internal Server Error","path":"/items/stock/deduct"}]
+	at feign.FeignException.serverErrorStatus(FeignException.java:250) ~[feign-core-11.8.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:197) ~[feign-core-11.8.jar:na]
 	at feign.FeignException.errorStatus(FeignException.java:185) ~[feign-core-11.8.jar:na]
 	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-11.8.jar:na]
 	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-11.8.jar:na]
 	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-11.8.jar:na]
 	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-11.8.jar:na]
 	at com.alibaba.cloud.sentinel.feign.SentinelInvocationHandler.invoke(SentinelInvocationHandler.java:109) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
-	at jdk.proxy2/jdk.proxy2.$Proxy132.removeByItemIds(Unknown Source) ~[na:na]
-	at com.hmall.trade.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:78) ~[classes/:na]
+	at jdk.proxy2/jdk.proxy2.$Proxy131.deductStock(Unknown Source) ~[na:na]
+	at com.hmall.trade.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:84) ~[classes/:na]
 	at com.hmall.trade.service.impl.OrderServiceImpl$$FastClassBySpringCGLIB$$863dd453.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.27.jar:5.3.27]
@@ -400,8 +419,14 @@ feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor$2.execute(GlobalTransactionalInterceptor.java:205) ~[seata-all-1.5.2.jar:1.5.2]
+	at io.seata.tm.api.TransactionalTemplate.execute(TransactionalTemplate.java:127) ~[seata-all-1.5.2.jar:1.5.2]
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor.handleGlobalTransaction(GlobalTransactionalInterceptor.java:202) ~[seata-all-1.5.2.jar:1.5.2]
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor.invoke(GlobalTransactionalInterceptor.java:172) ~[seata-all-1.5.2.jar:1.5.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.27.jar:5.3.27]
-	at com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$464cbc02.createOrder(<generated>) ~[classes/:na]
+	at com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$47fc6426.createOrder(<generated>) ~[classes/:na]
 	at com.hmall.trade.controller.OrderController.createOrder(OrderController.java:31) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
@@ -452,495 +477,53 @@ feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-19:55:28:891 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
-19:55:28:892 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
-19:55:28:901 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (8ms)
-19:55:28:902 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
-19:55:28:902 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
-19:55:28:902 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Wed, 25 Dec 2024 11:55:28 GMT
-19:55:28:903 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
-19:55:28:903 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
-19:55:28:903 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
-19:55:28:903 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
-19:55:28:904 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (460-byte body)
-19:55:51:393 DEBUG 30168 --- [http-nio-8086-exec-4] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
-19:55:51:394 DEBUG 30168 --- [http-nio-8086-exec-4] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1871887578592993282(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
-19:55:51:396 DEBUG 30168 --- [http-nio-8086-exec-4] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
-19:55:51:398 DEBUG 30168 --- [http-nio-8086-exec-4] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
-19:55:51:398 DEBUG 30168 --- [http-nio-8086-exec-4] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1871887578592993282(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
-19:55:52:298 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> DELETE http://cart-service/carts HTTP/1.1
-19:55:52:298 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Length: 16
-19:55:52:299 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Type: application/json
-19:55:52:299 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-19:55:52:299 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ["100001511821"]
-19:55:52:299 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> END HTTP (16-byte body)
-19:55:52:308 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- HTTP/1.1 400  (8ms)
-19:55:52:308 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] connection: close
-19:55:52:309 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] content-type: application/json
-19:55:52:309 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] date: Wed, 25 Dec 2024 11:55:52 GMT
-19:55:52:309 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] transfer-encoding: chunked
-19:55:52:310 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-19:55:52:310 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] {"timestamp":"2024-12-25T11:55:52.307+00:00","status":400,"error":"Bad Request","path":"/carts"}
-19:55:52:311 DEBUG 30168 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- END HTTP (96-byte body)
-19:55:52:315 ERROR 30168 --- [http-nio-8086-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T11:55:52.307+00:00","status":400,"error":"Bad Request","path":"/carts"}]] with root cause
-
-feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T11:55:52.307+00:00","status":400,"error":"Bad Request","path":"/carts"}]
-	at feign.FeignException.clientErrorStatus(FeignException.java:213) ~[feign-core-11.8.jar:na]
-	at feign.FeignException.errorStatus(FeignException.java:194) ~[feign-core-11.8.jar:na]
-	at feign.FeignException.errorStatus(FeignException.java:185) ~[feign-core-11.8.jar:na]
-	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-11.8.jar:na]
-	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-11.8.jar:na]
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-11.8.jar:na]
-	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-11.8.jar:na]
-	at com.alibaba.cloud.sentinel.feign.SentinelInvocationHandler.invoke(SentinelInvocationHandler.java:109) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
-	at jdk.proxy2/jdk.proxy2.$Proxy132.removeByItemIds(Unknown Source) ~[na:na]
-	at com.hmall.trade.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:78) ~[classes/:na]
-	at com.hmall.trade.service.impl.OrderServiceImpl$$FastClassBySpringCGLIB$$863dd453.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.27.jar:5.3.27]
-	at com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$464cbc02.createOrder(<generated>) ~[classes/:na]
-	at com.hmall.trade.controller.OrderController.createOrder(OrderController.java:31) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
-
-20:02:04:669 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
-20:02:04:670 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
-20:02:04:682 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (11ms)
-20:02:04:683 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
-20:02:04:683 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
-20:02:04:683 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Wed, 25 Dec 2024 12:02:04 GMT
-20:02:04:684 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
-20:02:04:684 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
-20:02:04:684 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
-20:02:04:685 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
-20:02:04:685 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (460-byte body)
-20:02:04:687 DEBUG 30168 --- [http-nio-8086-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
-20:02:04:688 DEBUG 30168 --- [http-nio-8086-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1871889144288927745(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
-20:02:04:690 DEBUG 30168 --- [http-nio-8086-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
-20:02:04:692 DEBUG 30168 --- [http-nio-8086-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
-20:02:04:693 DEBUG 30168 --- [http-nio-8086-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1871889144288927745(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
-20:02:12:119 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> DELETE http://cart-service/carts HTTP/1.1
-20:02:12:134 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Length: 16
-20:02:12:146 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Type: application/json
-20:02:12:156 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-20:02:12:161 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ["100001511821"]
-20:02:12:166 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> END HTTP (16-byte body)
-20:02:12:241 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- HTTP/1.1 400  (69ms)
-20:02:12:246 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] connection: close
-20:02:12:252 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] content-type: application/json
-20:02:12:257 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] date: Wed, 25 Dec 2024 12:02:12 GMT
-20:02:12:262 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] transfer-encoding: chunked
-20:02:12:267 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-20:02:12:274 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] {"timestamp":"2024-12-25T12:02:12.230+00:00","status":400,"error":"Bad Request","path":"/carts"}
-20:02:12:279 DEBUG 30168 --- [http-nio-8086-exec-5] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- END HTTP (96-byte body)
-20:02:15:946 ERROR 30168 --- [http-nio-8086-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T12:02:12.230+00:00","status":400,"error":"Bad Request","path":"/carts"}]] with root cause
-
-feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T12:02:12.230+00:00","status":400,"error":"Bad Request","path":"/carts"}]
-	at feign.FeignException.clientErrorStatus(FeignException.java:213) ~[feign-core-11.8.jar:na]
-	at feign.FeignException.errorStatus(FeignException.java:194) ~[feign-core-11.8.jar:na]
-	at feign.FeignException.errorStatus(FeignException.java:185) ~[feign-core-11.8.jar:na]
-	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-11.8.jar:na]
-	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-11.8.jar:na]
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-11.8.jar:na]
-	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-11.8.jar:na]
-	at com.alibaba.cloud.sentinel.feign.SentinelInvocationHandler.invoke(SentinelInvocationHandler.java:109) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
-	at jdk.proxy2/jdk.proxy2.$Proxy132.removeByItemIds(Unknown Source) ~[na:na]
-	at com.hmall.trade.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:78) ~[classes/:na]
-	at com.hmall.trade.service.impl.OrderServiceImpl$$FastClassBySpringCGLIB$$863dd453.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.27.jar:5.3.27]
-	at com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$464cbc02.createOrder(<generated>) ~[classes/:na]
-	at com.hmall.trade.controller.OrderController.createOrder(OrderController.java:31) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
-
-20:02:31:056 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
-20:02:31:056 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
-20:02:31:065 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (8ms)
-20:02:31:066 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
-20:02:31:067 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
-20:02:31:067 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Wed, 25 Dec 2024 12:02:31 GMT
-20:02:31:067 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
-20:02:31:068 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
-20:02:31:068 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
-20:02:31:068 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
-20:02:31:069 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (460-byte body)
-20:02:31:070 DEBUG 30168 --- [http-nio-8086-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
-20:02:31:071 DEBUG 30168 --- [http-nio-8086-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1871889254997581826(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
-20:02:31:072 DEBUG 30168 --- [http-nio-8086-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
-20:02:31:073 DEBUG 30168 --- [http-nio-8086-exec-6] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
-20:02:31:074 DEBUG 30168 --- [http-nio-8086-exec-6] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1871889254997581826(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
-20:03:20:114 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> DELETE http://cart-service/carts HTTP/1.1
-20:03:20:115 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Length: 16
-20:03:20:115 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] Content-Type: application/json
-20:03:20:115 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-20:03:20:116 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ["100001511821"]
-20:03:20:116 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> END HTTP (16-byte body)
-20:03:20:129 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- HTTP/1.1 400  (12ms)
-20:03:20:130 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] connection: close
-20:03:20:131 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] content-type: application/json
-20:03:20:131 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] date: Wed, 25 Dec 2024 12:03:20 GMT
-20:03:20:131 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] transfer-encoding: chunked
-20:03:20:131 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
-20:03:20:132 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] {"timestamp":"2024-12-25T12:03:20.127+00:00","status":400,"error":"Bad Request","path":"/carts"}
-20:03:20:133 DEBUG 30168 --- [http-nio-8086-exec-6] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- END HTTP (96-byte body)
-20:03:20:140 ERROR 30168 --- [http-nio-8086-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T12:03:20.127+00:00","status":400,"error":"Bad Request","path":"/carts"}]] with root cause
-
-feign.FeignException$BadRequest: [400 ] during [DELETE] to [http://cart-service/carts] [CartClient#removeByItemIds(Collection)]: [{"timestamp":"2024-12-25T12:03:20.127+00:00","status":400,"error":"Bad Request","path":"/carts"}]
-	at feign.FeignException.clientErrorStatus(FeignException.java:213) ~[feign-core-11.8.jar:na]
-	at feign.FeignException.errorStatus(FeignException.java:194) ~[feign-core-11.8.jar:na]
-	at feign.FeignException.errorStatus(FeignException.java:185) ~[feign-core-11.8.jar:na]
-	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-11.8.jar:na]
-	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-11.8.jar:na]
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-11.8.jar:na]
-	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-11.8.jar:na]
-	at com.alibaba.cloud.sentinel.feign.SentinelInvocationHandler.invoke(SentinelInvocationHandler.java:109) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
-	at jdk.proxy2/jdk.proxy2.$Proxy132.removeByItemIds(Unknown Source) ~[na:na]
-	at com.hmall.trade.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:78) ~[classes/:na]
-	at com.hmall.trade.service.impl.OrderServiceImpl$$FastClassBySpringCGLIB$$863dd453.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.27.jar:5.3.27]
-	at com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$464cbc02.createOrder(<generated>) ~[classes/:na]
-	at com.hmall.trade.controller.OrderController.createOrder(OrderController.java:31) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
-
-20:05:10:182  INFO 36148 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
-20:05:11:490  INFO 36148 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=959a09a8-a68a-318b-af2f-f85d214db35f
-20:05:12:662  INFO 36148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
-20:05:12:694  INFO 36148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-20:05:12:695  INFO 36148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-20:05:13:037  INFO 36148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-20:05:13:039  INFO 36148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2824 ms
-20:05:13:615  INFO 36148 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-20:05:14:776  INFO 36148 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
-20:05:15:495  INFO 36148 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-20:05:16:218  INFO 36148 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-20:05:16:560  INFO 36148 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 55c3a5a1-9692-4ebf-b89e-6f56149ef4b5
-20:05:16:561  INFO 36148 --- [main] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] RpcClient init label, labels = {module=naming, source=sdk}
-20:05:16:566  INFO 36148 --- [main] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-20:05:16:567  INFO 36148 --- [main] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-20:05:16:569  INFO 36148 --- [main] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-20:05:16:570  INFO 36148 --- [main] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Try to connect to server on start up, server: {serverIp = '192.168.163.130', server main port = 8848}
-20:05:16:713  INFO 36148 --- [main] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Success to connect to server [192.168.163.130:8848] on start up, connectionId = 1735128317657_192.168.163.133_51865
-20:05:16:714  INFO 36148 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Notify connected event to listeners.
-20:05:16:714  INFO 36148 --- [main] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-20:05:16:717  INFO 36148 --- [main] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000001b1d84c1498
-20:05:16:828  INFO 36148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
-20:05:16:852  INFO 36148 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.244.21.17:8086 register finished
-20:05:16:864  INFO 36148 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-20:05:16:872  INFO 36148 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-20:05:16:908  INFO 36148 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-20:05:17:068  INFO 36148 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 9.791 seconds (JVM running for 10.624)
-20:05:17:076  INFO 36148 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service, group=DEFAULT_GROUP
-20:05:17:077  INFO 36148 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service-local.yaml, group=DEFAULT_GROUP
-20:05:17:079  INFO 36148 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service.yaml, group=DEFAULT_GROUP
-20:05:17:289  INFO 36148 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Receive server push request, request = NotifySubscriberRequest, requestId = 21
-20:05:17:294  INFO 36148 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Ack server push request, request = NotifySubscriberRequest, requestId = 21
-20:06:31:285  INFO 36148 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-20:06:31:286  INFO 36148 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-20:06:31:287  INFO 36148 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-20:06:31:460  INFO 36148 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-20:06:31:843  INFO 36148 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-20:06:31:883 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
-20:06:31:884 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
-20:06:32:126 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (241ms)
-20:06:32:127 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
-20:06:32:127 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
-20:06:32:128 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Wed, 25 Dec 2024 12:06:32 GMT
-20:06:32:128 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
-20:06:32:128 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
-20:06:32:129 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
-20:06:32:131 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
-20:06:32:132 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (460-byte body)
-20:06:32:210 DEBUG 36148 --- [http-nio-8086-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
-20:06:32:256 DEBUG 36148 --- [http-nio-8086-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1871890266357506050(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
-20:06:32:263 DEBUG 36148 --- [http-nio-8086-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
-20:06:32:283 DEBUG 36148 --- [http-nio-8086-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
-20:06:32:287 DEBUG 36148 --- [http-nio-8086-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1871890266357506050(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
-20:06:32:316 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=100001511821 HTTP/1.1
-20:06:32:317 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
-20:06:32:402 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (85ms)
-20:06:32:404 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
-20:06:32:405 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
-20:06:32:405 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Wed, 25 Dec 2024 12:06:32 GMT
-20:06:32:406 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
-20:06:32:406 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
-20:06:32:424 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
-20:06:32:425 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 35
-20:06:32:425 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
-20:06:32:426 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
-20:06:32:426 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"100001511821","num":1}]
-20:06:32:426 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (35-byte body)
-20:06:32:504 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (78ms)
-20:06:32:505 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
-20:06:32:506 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
-20:06:32:506 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Wed, 25 Dec 2024 12:06:32 GMT
-20:06:32:506 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
-20:06:32:506 DEBUG 36148 --- [http-nio-8086-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
-20:06:32:583  INFO 36148 --- [nacos-grpc-client-executor-28] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Receive server push request, request = NotifySubscriberRequest, requestId = 23
-20:06:32:592  INFO 36148 --- [nacos-grpc-client-executor-28] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Ack server push request, request = NotifySubscriberRequest, requestId = 23
-20:06:32:875  INFO 36148 --- [nacos-grpc-client-executor-29] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Receive server push request, request = NotifySubscriberRequest, requestId = 24
-20:06:32:876  INFO 36148 --- [nacos-grpc-client-executor-29] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Ack server push request, request = NotifySubscriberRequest, requestId = 24
-20:06:32:904 DEBUG 36148 --- [http-nio-8086-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
-20:06:32:906 DEBUG 36148 --- [http-nio-8086-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1871890266357506050(Long)
-20:06:32:976 DEBUG 36148 --- [http-nio-8086-exec-3] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
-20:36:49:555 DEBUG 36148 --- [http-nio-8086-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
-20:36:49:557 DEBUG 36148 --- [http-nio-8086-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1871890266357506050(Long)
-20:36:49:562 DEBUG 36148 --- [http-nio-8086-exec-4] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
-21:05:37:491  INFO 36148 --- [nacos-grpc-client-executor-797] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Receive server push request, request = NotifySubscriberRequest, requestId = 44
-21:05:37:493  INFO 36148 --- [nacos-grpc-client-executor-797] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Ack server push request, request = NotifySubscriberRequest, requestId = 44
-21:05:37:592  INFO 36148 --- [nacos-grpc-client-executor-798] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Receive server push request, request = NotifySubscriberRequest, requestId = 46
-21:05:37:593  INFO 36148 --- [nacos-grpc-client-executor-798] com.alibaba.nacos.common.remote.client   : [55c3a5a1-9692-4ebf-b89e-6f56149ef4b5] Ack server push request, request = NotifySubscriberRequest, requestId = 46
-21:06:24:381  INFO 37340 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
-21:06:28:690  INFO 37340 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=959a09a8-a68a-318b-af2f-f85d214db35f
-21:06:32:053  INFO 37340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
-21:06:32:136  INFO 37340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-21:06:32:141  INFO 37340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-21:06:32:593  INFO 37340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-21:06:32:617  INFO 37340 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8157 ms
-21:06:34:036  INFO 37340 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-21:06:36:385  INFO 37340 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
-21:06:37:499  INFO 37340 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-21:06:38:943  INFO 37340 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-21:06:39:737  INFO 37340 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 27d912ca-4072-474f-93b1-8cd6245dea0a
-21:06:39:743  INFO 37340 --- [main] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] RpcClient init label, labels = {module=naming, source=sdk}
-21:06:39:748  INFO 37340 --- [main] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-21:06:39:749  INFO 37340 --- [main] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-21:06:39:753  INFO 37340 --- [main] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-21:06:39:757  INFO 37340 --- [main] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Try to connect to server on start up, server: {serverIp = '192.168.163.130', server main port = 8848}
-21:06:39:952  INFO 37340 --- [main] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Success to connect to server [192.168.163.130:8848] on start up, connectionId = 1735132000862_192.168.163.133_60487
-21:06:39:983  INFO 37340 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Notify connected event to listeners.
-21:06:39:982  INFO 37340 --- [main] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-21:06:39:994  INFO 37340 --- [main] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000001e4954aae70
-21:06:40:137  INFO 37340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
-21:06:40:175  INFO 37340 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.244.21.17:8086 register finished
-21:06:40:189  INFO 37340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-21:06:40:196  INFO 37340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-21:06:40:257  INFO 37340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-21:06:40:559  INFO 37340 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 35.649 seconds (JVM running for 38.779)
-21:06:40:606  INFO 37340 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service, group=DEFAULT_GROUP
-21:06:40:625  INFO 37340 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service-local.yaml, group=DEFAULT_GROUP
-21:06:40:627  INFO 37340 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service.yaml, group=DEFAULT_GROUP
-21:06:40:688  INFO 37340 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Receive server push request, request = NotifySubscriberRequest, requestId = 57
-21:06:40:696  INFO 37340 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Ack server push request, request = NotifySubscriberRequest, requestId = 57
-21:08:22:273  INFO 37340 --- [http-nio-8086-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-21:08:22:274  INFO 37340 --- [http-nio-8086-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-21:08:22:279  INFO 37340 --- [http-nio-8086-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-21:08:22:625  INFO 37340 --- [http-nio-8086-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-21:08:23:057  INFO 37340 --- [http-nio-8086-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-21:08:23:072 DEBUG 37340 --- [http-nio-8086-exec-5] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
-21:08:23:145 DEBUG 37340 --- [http-nio-8086-exec-5] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1871890266357506050(Long)
-21:08:23:231 DEBUG 37340 --- [http-nio-8086-exec-5] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
-21:08:31:414 DEBUG 37340 --- [http-nio-8086-exec-6] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
-21:08:31:416 DEBUG 37340 --- [http-nio-8086-exec-6] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1871890266357506050(Long)
-21:08:31:420 DEBUG 37340 --- [http-nio-8086-exec-6] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
-21:09:13:422 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
-21:09:13:423 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] user-info: 1
-21:09:13:424 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
-21:09:13:677 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (252ms)
-21:09:13:677 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
-21:09:13:678 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
-21:09:13:678 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Wed, 25 Dec 2024 13:09:13 GMT
-21:09:13:679 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
-21:09:13:679 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
-21:09:13:679 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
-21:09:13:681 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9999,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
-21:09:13:682 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (459-byte body)
-21:09:13:724 DEBUG 37340 --- [http-nio-8086-exec-4] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
-21:09:13:727 DEBUG 37340 --- [http-nio-8086-exec-4] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1871906043345350657(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
-21:09:13:730 DEBUG 37340 --- [http-nio-8086-exec-4] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
-21:09:13:747 DEBUG 37340 --- [http-nio-8086-exec-4] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
-21:09:13:751 DEBUG 37340 --- [http-nio-8086-exec-4] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1871906043345350657(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
-21:09:13:765 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=100001511821 HTTP/1.1
-21:09:13:766 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
-21:09:13:766 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
-21:09:13:843 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (76ms)
-21:09:13:844 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
-21:09:13:844 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
-21:09:13:844 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Wed, 25 Dec 2024 13:09:13 GMT
-21:09:13:844 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
-21:09:13:845 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
-21:09:13:851 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
-21:09:13:852 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 35
-21:09:13:853 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
-21:09:13:853 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
-21:09:13:853 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
-21:09:13:854 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"100001511821","num":1}]
-21:09:13:854 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (35-byte body)
-21:09:13:905 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (51ms)
-21:09:13:905 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
-21:09:13:906 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
-21:09:13:906 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Wed, 25 Dec 2024 13:09:13 GMT
-21:09:13:907 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
-21:09:13:907 DEBUG 37340 --- [http-nio-8086-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
-21:09:14:092  INFO 37340 --- [nacos-grpc-client-executor-42] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Receive server push request, request = NotifySubscriberRequest, requestId = 63
-21:09:14:093  INFO 37340 --- [nacos-grpc-client-executor-42] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Ack server push request, request = NotifySubscriberRequest, requestId = 63
-21:09:14:333 DEBUG 37340 --- [http-nio-8086-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
-21:09:14:334 DEBUG 37340 --- [http-nio-8086-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1871906043345350657(Long)
-21:09:14:345 DEBUG 37340 --- [http-nio-8086-exec-3] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
-21:09:14:398  INFO 37340 --- [nacos-grpc-client-executor-43] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Receive server push request, request = NotifySubscriberRequest, requestId = 64
-21:09:14:401  INFO 37340 --- [nacos-grpc-client-executor-43] com.alibaba.nacos.common.remote.client   : [27d912ca-4072-474f-93b1-8cd6245dea0a] Ack server push request, request = NotifySubscriberRequest, requestId = 64
-21:09:17:449 DEBUG 37340 --- [http-nio-8086-exec-10] c.h.trade.mapper.OrderMapper.updateById  : ==>  Preparing: UPDATE `order` SET status=?, pay_time=? WHERE id=?
+19:53:45:904  INFO 5808 --- [rpcDispatch_RMROLE_1_3_24] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.163.130:8099:36629696881897497,branchId=36629696881897499,branchType=XA,resourceId=jdbc:mysql://192.168.163.130:3306/hm-trade,applicationData=null
+19:53:45:905  INFO 5808 --- [rpcDispatch_RMROLE_1_3_24] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.163.130:8099:36629696881897497 36629696881897499 jdbc:mysql://192.168.163.130:3306/hm-trade null
+19:53:45:909  INFO 5808 --- [rpcDispatch_RMROLE_1_3_24] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.163.130:8099:36629696881897497-36629696881897499 was committed.
+19:53:45:910  INFO 5808 --- [rpcDispatch_RMROLE_1_3_24] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:53:45:943  INFO 5808 --- [http-nio-8085-exec-8] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.163.130:8099:36629696881897497
+19:53:45:943  INFO 5808 --- [http-nio-8085-exec-8] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.163.130:8099:36629696881897497] commit status: Committed
+19:53:46:080 DEBUG 5808 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+19:53:46:082 DEBUG 5808 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1872249439712817154(Long)
+19:53:46:084 DEBUG 5808 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+19:59:52:011  INFO 5808 --- [nacos-grpc-client-executor-384] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Receive server push request, request = NotifySubscriberRequest, requestId = 213
+19:59:52:017  INFO 5808 --- [nacos-grpc-client-executor-384] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Ack server push request, request = NotifySubscriberRequest, requestId = 213
+20:00:02:581  INFO 5808 --- [nacos-grpc-client-executor-386] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Receive server push request, request = NotifySubscriberRequest, requestId = 218
+20:00:02:584  INFO 5808 --- [nacos-grpc-client-executor-386] com.alibaba.nacos.common.remote.client   : [2158cd69-c54b-4e53-b07c-6f5f04da2fc3] Ack server push request, request = NotifySubscriberRequest, requestId = 218
+20:01:37:372  INFO 5808 --- [http-nio-8085-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.163.130:8099:36629696881897509]
+20:01:37:380 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+20:01:37:381 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] user-info: 1
+20:01:37:381 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] ---> END HTTP (0-byte body)
+20:01:37:421 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- HTTP/1.1 200  (39ms)
+20:01:37:422 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] connection: keep-alive
+20:01:37:422 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] content-type: application/json
+20:01:37:422 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] date: Thu, 26 Dec 2024 12:01:37 GMT
+20:01:37:423 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] keep-alive: timeout=60
+20:01:37:423 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] transfer-encoding: chunked
+20:01:37:423 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] 
+20:01:37:424 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+20:01:37:424 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemsByIds] <--- END HTTP (456-byte body)
+20:01:37:426 DEBUG 5808 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+20:01:37:427 DEBUG 5808 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1872251417868218370(Long), 13700(Integer), 3(Integer), 1(Long), 1(Integer)
+20:01:37:429 DEBUG 5808 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+20:01:37:431 DEBUG 5808 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+20:01:37:431 DEBUG 5808 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1872251417868218370(Long), 100001511821(Long), 1(Integer), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+20:01:37:435 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=100001511821 HTTP/1.1
+20:01:37:435 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+20:01:37:436 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+20:01:37:456 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (19ms)
+20:01:37:456 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+20:01:37:457 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+20:01:37:457 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Thu, 26 Dec 2024 12:01:37 GMT
+20:01:37:457 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+20:01:37:457 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+20:01:37:458 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+20:01:37:458 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 35
+20:01:37:459 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+20:01:37:459 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+20:01:37:459 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+20:01:37:459 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"100001511821","num":1}]
+20:01:37:459 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (35-byte body)
+20:01:37:646 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 500  (187ms)
+20:01:37:647 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: close
+20:01:37:648 DEBUG 5808 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-type: application/json

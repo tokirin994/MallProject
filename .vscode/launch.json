@@ -20,7 +20,8 @@
             "projectName": "gateway-service",
             "args": [
                 "--server.port=8080",
-                "---spring.profiles.active=local"
+                "---spring.profiles.active=local",
+                "--add-opens=java.base/java.lang=ALL-UNNAMED"
             ],
             "envFile": "${workspaceFolder}/.env"
         },
@@ -33,21 +34,9 @@
             "projectName": "item-service",
             "args": [
                 "--server.port=8081",
-                "---spring.profiles.active=local"
+                "--spring.profiles.active=local"
             ],
-            "envFile": "${workspaceFolder}/.env"
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-ItemApplication<item-service>2",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "com.hmall.item.ItemApplication",
-            "projectName": "item-service",
-            "args": [
-                "--server.port=8082",
-                "---spring.profiles.active=local"
-            ],
+            "vmArgs": ["--add-opens=java.base/java.lang=ALL-UNNAMED"],
             "envFile": "${workspaceFolder}/.env"
         },
         {
@@ -58,9 +47,10 @@
             "mainClass": "com.hmall.cart.CartApplication",
             "projectName": "cart-service",
             "args": [
-                "--server.port=8083",
-                "---spring.profiles.active=local"
+                "--server.port=8082",
+                "--spring.profiles.active=local"
             ],
+            "vmArgs": ["--add-opens=java.base/java.lang=ALL-UNNAMED"],
             "envFile": "${workspaceFolder}/.env"
         },
         {
@@ -71,9 +61,10 @@
             "mainClass": "com.hmall.user.UserApplication",
             "projectName": "user-service",
             "args": [
-                "--server.port=8084",
+                "--server.port=8083",
                 "---spring.profiles.active=local"
             ],
+            "vmArgs": ["--add-opens=java.base/java.lang=ALL-UNNAMED"],
             "envFile": "${workspaceFolder}/.env"
         },
         {
@@ -84,9 +75,10 @@
             "mainClass": "com.hmall.pay.PayApplication",
             "projectName": "pay-service",
             "args": [
-                "--server.port=8085",
-                "---spring.profiles.active=local"
+                "--server.port=8084",
+                "--spring.profiles.active=local"
             ],
+            "vmArgs": ["--add-opens=java.base/java.lang=ALL-UNNAMED"],
             "envFile": "${workspaceFolder}/.env"
         },
         {
@@ -97,9 +89,10 @@
             "mainClass": "com.hmall.trade.TradeApplication",
             "projectName": "trade-service",
             "args": [
-                "--server.port=8086",
-                "---spring.profiles.active=local"
+                "--server.port=8085",
+                "--spring.profiles.active=local"
             ],
+            "vmArgs": ["--add-opens=java.base/java.lang=ALL-UNNAMED"],
             "envFile": "${workspaceFolder}/.env"
         }
     ]
