@@ -33,7 +33,7 @@ public class DefaultFeignConfig {
         }; 
     }
 
-    // @Bean
+    @Bean
     public ItemClientFallBackFactory itemClientFallBackFactory(){
         return new ItemClientFallBackFactory();
     }

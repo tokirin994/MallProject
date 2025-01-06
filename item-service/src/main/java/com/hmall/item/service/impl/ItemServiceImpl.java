@@ -11,6 +11,7 @@ import com.hmall.item.service.IItemService;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
 import java.util.Collection;
 import java.util.List;
@@ -33,6 +34,8 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements II
         try {
             r = executeBatch(items, (sqlSession, entity) -> sqlSession.update(sqlStatement, entity));
         } catch (Exception e) {
+            // 手动回滚事务
+            TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
             throw new BizIllegalException("更新库存异常，可能是库存不足!", e);
         }
         if (!r) {
