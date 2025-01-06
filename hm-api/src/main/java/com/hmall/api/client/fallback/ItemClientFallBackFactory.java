@@ -13,7 +13,7 @@ import com.hmall.common.utils.CollUtils;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class ItemClientFallBackFactory implements FallbackFactory{
+public class ItemClientFallbackFactory implements FallbackFactory{
     @Override
     public Object create(Throwable cause) {
         return new ItemClient() {

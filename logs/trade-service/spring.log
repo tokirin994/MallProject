@@ -1,2 +1,0 @@
-14:47:28:033  INFO 1540 --- [rpcDispatch_RMROLE_1_12_24] i.s.c.r.p.client.RmUndoLogProcessor      : rm handle undo log process:UndoLogDeleteRequest{resourceId='jdbc:mysql://192.168.163.130:3306/hm-trade', saveDays=7, branchType=AT}
-14:47:28:065  WARN 1540 --- [rpcDispatch_RMROLE_1_12_24] io.seata.rm.RMHandlerAT                  : Failed to get dataSourceProxy for delete undolog on jdbc:mysql://192.168.163.130:3306/hm-trade

@@ -18,6 +18,8 @@ import com.hmall.pay.mapper.PayOrderMapper;
 import com.hmall.pay.service.IPayOrderService;
 
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -35,6 +37,7 @@ import java.time.LocalDateTime;
 @RequiredArgsConstructor
 public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> implements IPayOrderService {
 
+    private final RabbitTemplate rabbitTemplate;
     private final UserClient userClient;
     private final TradeClient tradeClient;
 
@@ -64,11 +67,18 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
             throw new BizIllegalException("交易已支付或关闭！");
         }
         // 5.修改订单状态
-        Order order = new Order();
-        order.setId(po.getBizOrderNo());
-        order.setStatus(2);
-        order.setPayTime(LocalDateTime.now());
-        tradeClient.markOrderPaySuccess(po.getBizOrderNo());
+        // Order order = new Order();
+        // order.setId(po.getBizOrderNo());
+        // order.setStatus(2);
+        // order.setPayTime(LocalDateTime.now());
+        // tradeClient.markOrderPaySuccess(po.getBizOrderNo());
+        // 下面注释掉来测试兜底的延迟队列方案
+        // try {
+        //     rabbitTemplate.convertAndSend("pay.direct", "pay.success", po.getBizOrderNo());
+        // } catch (Exception e) {
+        //     // TODO: handle exception
+        // }
+
     }
 
     public boolean markPayOrderSuccess(Long id, LocalDateTime successTime) {

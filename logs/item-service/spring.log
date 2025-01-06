@@ -1,1 +1,0 @@
-14:47:28:035  INFO 18480 --- [rpcDispatch_RMROLE_1_3_24] i.s.c.r.p.client.RmUndoLogProcessor      : rm handle undo log process:UndoLogDeleteRequest{resourceId='jdbc:mysql://192.168.163.130:3306/hm-item', saveDays=7, branchType=AT}
